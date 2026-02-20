@@ -648,6 +648,183 @@
         </div>
       </div>
     </section>
+
+    <!-- ///// -->
+    <section class="py-24 bg-[#0b0051]">
+      <!-- CONTAINER -->
+      <div class="max-w-[1370px] mx-auto px-4">
+        <div class="grid grid-cols-2 gap-16 items-center">
+          <!-- LEFT SIDE -->
+          <div>
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
+            >
+              <span class="w-2 h-2 bg-white rounded-full"></span>
+
+              KEY ISSUES
+
+              <span class="w-2 h-2 bg-white rounded-full"></span>
+            </div>
+
+            <!-- Heading -->
+            <h2
+              class="text-white text-[50px] font-extrabold leading-[65px] uppercase mb-6"
+            >
+              Show Transparency And Solutions
+            </h2>
+
+            <p class="text-gray-300 max-w-[520px] mb-14">
+              Nulla morbi donec nulla tempor scelerisque nisi enim amet. Metus
+              sed vitae nec dignissim id morbi egestas.
+            </p>
+
+            <!-- LIST -->
+            <div class="space-y-6 text-white font-bold text-xl">
+              <!-- ITEM 1 -->
+              <div
+                onmouseenter="
+                  changeImage('../src/img/solution-thumb1.jpg', this)
+                "
+                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer text-red-500"
+              >
+                <div class="flex gap-4 items-center">
+                  <span>•</span>
+
+                  EDUCATION FOR ALL
+                </div>
+
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-red-600"
+                >
+                  →
+                </div>
+              </div>
+
+              <!-- ITEM 2 -->
+              <div
+                onmouseenter="
+                  changeImage('../src/img/solution-thumb2.jpg', this)
+                "
+                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+              >
+                <div class="flex gap-4">
+                  <span>•</span>
+
+                  HEALTHCARE REFORM
+                </div>
+
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-red-600 border-white"
+                >
+                  →
+                </div>
+              </div>
+
+              <!-- ITEM 3 -->
+              <div
+                onmouseenter="
+                  changeImage('../src/img/solution-thumb3.jpg', this)
+                "
+                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+              >
+                <div class="flex gap-4">
+                  <span>•</span>
+
+                  JOBS & LOCAL ECONOMY
+                </div>
+
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-white"
+                >
+                  →
+                </div>
+              </div>
+
+              <!-- ITEM 4 -->
+              <div
+                onmouseenter="
+                  changeImage('../src/img/solution-thumb4.jpg', this)
+                "
+                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+              >
+                <div class="flex gap-4">
+                  <span>•</span>
+
+                  CLIMATE & ENVIRONMENT
+                </div>
+
+                <div
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-white"
+                >
+                  →
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="relative flex justify-end">
+            <!-- View All -->
+            <div
+              class="absolute right-0 w-40 h-40 border border-white/30 rounded-full flex flex-col justify-center items-center text-white"
+            >
+              ↗
+
+              <p class="text-sm mt-2">View All Issues</p>
+            </div>
+            <img
+              id="issueImage"
+              src="img/issue1.jpg"
+              class="w-[560px] h-[330px] object-cover mt-[400px]"
+            />
+          </div>
+        </div>
+
+        <!-- COUNTERS -->
+        <div class="grid grid-cols-4 mt-24 text-white">
+          <div>
+            <h3 class="text-[70px] font-extrabold">245+</h3>
+
+            <p class="text-sm text-gray-300">Community Events Hosted</p>
+          </div>
+
+          <div>
+            <h3 class="text-[70px] font-extrabold">145K</h3>
+
+            <p class="text-sm text-gray-300">Voter Engagements Reached</p>
+          </div>
+
+          <div>
+            <h3 class="text-[70px] font-extrabold">356+</h3>
+
+            <p class="text-sm text-gray-300">Years In Public Service</p>
+          </div>
+
+          <div>
+            <h3 class="text-[70px] font-extrabold">3500K</h3>
+
+            <p class="text-sm text-gray-300">Volunteer Hours Organized</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+      function changeImage(src, element) {
+        // change image
+        document.getElementById("issueImage").src = src;
+
+        // remove active
+        document.querySelectorAll(".issue").forEach((item) => {
+          item.classList.remove("text-red-500");
+        });
+
+        // active
+        element.classList.add("text-red-500");
+      }
+    </script>
     <!-- Slick JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
