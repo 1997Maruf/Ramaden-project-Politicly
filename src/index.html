@@ -140,45 +140,55 @@
       </div>
     </div>
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-[#0B0051] flex items-end">
+    <section
+      class="relative overflow-hidden bg-[#0B0051] flex flex-col lg:flex-row items-end"
+    >
       <div
-        class="max-w-[1370px] mx-auto pt-[200px] px-6 w-full flex items-end justify-between"
+        class="max-w-[1370px] mx-auto px-6 pt-20 lg:pt-[200px] w-full flex flex-col-reverse lg:flex-row items-center lg:items-end justify-between gap-10 lg:gap-0"
       >
         <!-- Left Content -->
-        <div class="max-w-[750px] text-white pb-20">
+        <div
+          class="max-w-[750px] text-white pb-10 lg:pb-20 flex flex-col items-center lg:items-start text-center lg:text-left"
+        >
           <!-- Badge -->
           <div
-            class="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold mb-8"
+            class="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 lg:mb-8"
           >
             <span class="w-2 h-2 bg-white rounded-full"></span>
             CANDIDATES 2025 START YOUR JOURNEY!
           </div>
 
           <!-- Heading -->
-          <h1 class="text-6xl font-extrabold leading-tight mb-6">
+          <h1
+            class="lg:text-6xl text-3xl sm:text-4xl font-extrabold leading-tight mb-4 lg:mb-6"
+          >
             BUILDING TOMORROW’S SUCCESSES TODAY
           </h1>
 
           <!-- Sub Text -->
-          <p class="text-gray-300 text-lg mb-10">
-            “TOGETHER, WE CAN BUILD A COMMUNITY <br />
+          <p
+            class="text-gray-300 text-sm sm:text-base lg:text-lg mb-6 lg:mb-10"
+          >
+            “TOGETHER, WE CAN BUILD A COMMUNITY <br class="hidden sm:block" />
             THAT WORKS FOR EVERYONE.”
           </p>
 
           <!-- Buttons -->
-          <div class="flex items-center gap-8">
+          <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
             <a
               href="#"
-              class="bg-red-600 hover:bg-red-700 transition px-8 py-4 font-semibold text-white"
+              class="bg-red-600 hover:bg-red-700 transition px-6 sm:px-8 py-3 sm:py-4 font-semibold text-white text-sm sm:text-base rounded"
             >
               Join The Campaign
             </a>
 
-            <div class="flex items-center gap-4">
-              <span class="text-white font-semibold">WATCH VIDEO</span>
+            <div class="flex items-center gap-2 sm:gap-4">
+              <span class="text-white font-semibold text-sm sm:text-base"
+                >WATCH VIDEO</span
+              >
               <div class="relative">
                 <div
-                  class="w-14 h-14 flex items-center justify-center rounded-full bg-red-600 relative z-10"
+                  class="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-red-600 relative z-10 text-white text-lg sm:text-2xl"
                 >
                   ▶
                 </div>
@@ -191,16 +201,18 @@
         </div>
 
         <!-- Right Image -->
-        <div class="relative self-end">
+        <div
+          class="relative flex justify-center lg:justify-end w-full lg:w-auto"
+        >
           <img
             src="../src/img/hero-img.png"
             alt="Candidate"
-            class="relative z-10 w-[520px]"
+            class="relative z-10 w-[300px] sm:w-[400px] lg:w-[520px]"
           />
 
           <!-- Vote Circle -->
           <div
-            class="group absolute right-[-190px] -mt-[350px] w-40 h-40 border border-white rounded-full flex items-center justify-center text-center overflow-hidden cursor-pointer"
+            class="group absolute right-0 lg:right-[-190px] -mt-[250px] sm:-mt-[350px] w-32 sm:w-40 h-32 sm:h-40 border border-white rounded-full flex items-center justify-center text-center overflow-hidden cursor-pointer"
           >
             <!-- Sliding Background -->
             <div
@@ -209,16 +221,22 @@
 
             <!-- Content -->
             <div
-              class="relative group z-10 text-white group-hover:text-black duration-300"
+              class="relative z-10 group text-white group-hover:text-black duration-300"
             >
-              <div class="text-2xl mb-2">↗</div>
-              <p class="font-semibold">Vote Now</p>
+              <div class="text-xl sm:text-2xl mb-1 sm:mb-2">↗</div>
+              <p class="font-semibold text-sm sm:text-base">Vote Now</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="absolute right-0 position-rignhgt top-0">
-        <img class="w-[650px]" src="../src//img/heroAfter.png" alt="" />
+
+      <!-- Decorative Image -->
+      <div class="absolute right-0 top-0 hidden sm:block">
+        <img
+          class="w-[350px] sm:w-[650px]"
+          src="../src/img/heroAfter.png"
+          alt=""
+        />
       </div>
     </section>
     <!-- SECTION -->
@@ -237,37 +255,285 @@
       ></div>
 
       <!-- CONTAINER -->
-      <div class="relative z-10 max-w-[1370px] mx-auto">
-        <div class="grid grid-cols-2 min-h-[420px] pt-10">
+      <div class="relative z-10 max-w-[1370px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div
+          class="grid lg:grid-cols-2 grid-cols-1 min-h-[420px] pt-10 gap-6 lg:gap-10"
+        >
           <!-- LEFT IMAGE -->
-          <div class="flex items-end">
+          <div class="flex items-end justify-center lg:justify-start">
             <img
               src="../src/img/feature-thumb.png"
-              class="max-h-[420px] object-contain"
+              class="max-h-[420px] w-full lg:w-auto object-contain"
             />
           </div>
 
           <!-- RIGHT CONTENT -->
-          <div class="flex items-center justify-between text-white px-10">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between items-center text-white lg:w-[1100px] w-full space-y-6 lg:space-y-0"
+          >
+            <!-- FEATURE 1 -->
             <div class="text-center">
               <div class="flex justify-center mb-4">
-                <img src="../src/img/feature-icon1.svg" alt="" />
+                <img
+                  src="../src/img/feature-icon1.svg"
+                  class="hover:animate-bounce duration-300 w-16 h-16 sm:w-20 sm:h-20"
+                  alt=""
+                />
               </div>
-              <h3 class="font-bold uppercase text-3xl">OUR CAMPAIGN</h3>
-
-              <p class="text-sm opacity-90">Learn about our Mission</p>
+              <h3 class="font-bold uppercase text-xl sm:text-2xl">
+                OUR CAMPAIGN
+              </h3>
+              <p class="text-base sm:text-lg opacity-90">
+                Learn about our Mission
+              </p>
             </div>
 
+            <!-- FEATURE 2 -->
             <div class="text-center">
-              <h3 class="font-bold uppercase text-lg">JOIN VOLUNTEER</h3>
-
-              <p class="text-sm opacity-90">Be a part of us</p>
+              <div class="flex justify-center mb-4">
+                <img
+                  src="../src/img/feature-icon2.svg"
+                  class="hover:animate-bounce duration-300 w-16 h-16 sm:w-20 sm:h-20"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold uppercase text-xl sm:text-2xl">
+                Join Volunteer
+              </h3>
+              <p class="text-base sm:text-lg opacity-90">Be a part of us</p>
             </div>
 
+            <!-- FEATURE 3 -->
             <div class="text-center">
-              <h3 class="font-bold uppercase text-lg">DONATION</h3>
+              <div class="flex justify-center mb-4">
+                <img
+                  src="../src/img/feature-icon3.svg"
+                  class="hover:animate-bounce duration-300 w-16 h-16 sm:w-20 sm:h-20"
+                  alt=""
+                />
+              </div>
+              <h3 class="font-bold uppercase text-xl sm:text-2xl">Donation</h3>
+              <p class="text-base sm:text-lg opacity-90">
+                Your Donation helps us
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- policy priorities SECTION -->
 
-              <p class="text-sm opacity-90">Your Donation helps us</p>
+    <section class="bg-[#f3f3f1]">
+      <div class="container max-w-[1370px] mx-auto pb-20">
+        <div class="flex justify-center pt-20">
+          <div
+            class="flex w-[200px] justify-center items-center gap-2 bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 lg:mb-8"
+          >
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+            Issues / Vision
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+          </div>
+        </div>
+        <div class="flex justify-center mb-10">
+          <h2
+            class="lg:text-[60px] w-[950px] uppercase text-center font-extrabold"
+          >
+            Present clear stances and policy priorities.
+          </h2>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row px-6 lg:px-0 items-center justify-between"
+        >
+          <div
+            class="w-full sm:w-[300px] group text-[#000] px-6 py-10 bg-white hover:bg-[#DC2626] transition-colors duration-300"
+          >
+            <div class="flex flex-col group-hover:text-white">
+              <!-- Icon -->
+              <div
+                class="group-hover:bg-white w-14 h-14 flex items-center justify-center"
+              >
+                <img
+                  src="../src/img/vision-icon1.svg"
+                  alt=""
+                  class="group-hover:animate-bounce"
+                />
+              </div>
+
+              <!-- Heading -->
+              <h3 class="text-[18px] font-bold my-4">
+                Emergency alert and safety
+              </h3>
+
+              <!-- Paragraph -->
+              <p
+                class="text-gray-600 group-hover:text-white font-medium text-[20px] mb-6"
+              >
+                “Ensuring affordable care for every citizen.”
+              </p>
+
+              <!-- Arrow Circle -->
+              <div
+                class="flex items-center justify-center border w-12 h-12 border-gray-700 rounded-full group-hover:border-white group-hover:text-white transition-all duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[300px] group text-[#000] px-6 py-10 bg-white hover:bg-[#DC2626] transition-colors duration-300"
+          >
+            <div class="flex flex-col group-hover:text-white">
+              <!-- Icon -->
+              <div
+                class="group-hover:bg-white w-14 h-14 flex items-center justify-center"
+              >
+                <img
+                  src="../src/img/vision-icon2.svg"
+                  alt=""
+                  class="group-hover:animate-bounce"
+                />
+              </div>
+
+              <!-- Heading -->
+              <h3 class="text-[18px] font-bold my-4">
+                Emergency alert and safety
+              </h3>
+
+              <!-- Paragraph -->
+              <p
+                class="text-gray-600 group-hover:text-white font-medium text-[20px] mb-6"
+              >
+                “Ensuring affordable care for every citizen.”
+              </p>
+
+              <!-- Arrow Circle -->
+              <div
+                class="flex items-center justify-center border w-12 h-12 border-gray-700 rounded-full group-hover:border-white group-hover:text-white transition-all duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[300px] group text-[#000] px-6 py-10 bg-white hover:bg-[#DC2626] transition-colors duration-300"
+          >
+            <div class="flex flex-col group-hover:text-white">
+              <!-- Icon -->
+              <div
+                class="group-hover:bg-white w-14 h-14 flex items-center justify-center"
+              >
+                <img
+                  src="../src/img/vision-icon3.svg"
+                  alt=""
+                  class="group-hover:animate-bounce"
+                />
+              </div>
+
+              <!-- Heading -->
+              <h3 class="text-[18px] font-bold my-4">
+                Emergency alert and safety
+              </h3>
+
+              <!-- Paragraph -->
+              <p
+                class="text-gray-600 group-hover:text-white font-medium text-[20px] mb-6"
+              >
+                “Ensuring affordable care for every citizen.”
+              </p>
+
+              <!-- Arrow Circle -->
+              <div
+                class="flex items-center justify-center border w-12 h-12 border-gray-700 rounded-full group-hover:border-white group-hover:text-white transition-all duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-[300px] group text-[#000] px-6 py-10 bg-white hover:bg-[#DC2626] transition-colors duration-300"
+          >
+            <div class="flex flex-col group-hover:text-white">
+              <!-- Icon -->
+              <div
+                class="group-hover:bg-white w-14 h-14 flex items-center justify-center"
+              >
+                <img
+                  src="../src/img/vision-icon4.svg"
+                  alt=""
+                  class="group-hover:animate-bounce"
+                />
+              </div>
+
+              <!-- Heading -->
+              <h3 class="text-[18px] font-bold my-4">
+                Emergency alert and safety
+              </h3>
+
+              <!-- Paragraph -->
+              <p
+                class="text-gray-600 group-hover:text-white font-medium text-[20px] mb-6"
+              >
+                “Ensuring affordable care for every citizen.”
+              </p>
+
+              <!-- Arrow Circle -->
+              <div
+                class="flex items-center justify-center border w-12 h-12 border-gray-700 rounded-full group-hover:border-white group-hover:text-white transition-all duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
