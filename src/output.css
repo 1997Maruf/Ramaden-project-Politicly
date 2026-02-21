@@ -39,6 +39,15 @@
 .ml-\[200px\] {
   margin-left: 200px;
 }
+.ml-\[300px\] {
+  margin-left: 300px;
+}
+.ml-\[700px\] {
+  margin-left: 700px;
+}
+.ml-\[800px\] {
+  margin-left: 800px;
+}
 .flex {
   display: flex;
 }
@@ -65,6 +74,9 @@
 }
 .h-\[420px\] {
   height: 420px;
+}
+.h-\[600px\] {
+  height: 600px;
 }
 .h-auto {
   height: auto;
@@ -99,6 +111,18 @@
 .w-\[350px\] {
   width: 350px;
 }
+.w-\[500px\] {
+  width: 500px;
+}
+.w-\[550px\] {
+  width: 550px;
+}
+.w-\[600px\] {
+  width: 600px;
+}
+.w-\[700px\] {
+  width: 700px;
+}
 .w-\[950px\] {
   width: 950px;
 }
@@ -122,6 +146,12 @@
 }
 .max-w-full {
   max-width: 100%;
+}
+.flex-shrink {
+  flex-shrink: 1;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
