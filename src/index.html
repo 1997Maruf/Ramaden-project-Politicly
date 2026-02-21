@@ -17,15 +17,79 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <title>Document</title>
+
+    <style>
+      /* gap */
+
+      .center .slick-slide {
+        padding: 0 10px;
+      }
+
+      /* arrow desktop */
+
+      button.slick-prev {
+        left: 310px;
+        top: 220px;
+        width: 50px;
+        height: 50px;
+        background: gray;
+        z-index: 110;
+      }
+
+      button.slick-next {
+        left: 400px;
+        top: 220px;
+        width: 50px;
+        height: 50px;
+        background: gray;
+        z-index: 110;
+      }
+
+      .slick-prev:before {
+        content: "←";
+        font-size: 30px;
+      }
+
+      .slick-next:before {
+        content: "→";
+        font-size: 30px;
+      }
+
+      /* mobile arrow hide */
+
+      @media (max-width: 1024px) {
+        button.slick-next {
+          left: 0;
+        }
+      }
+
+      /* slide */
+
+      .slide-card {
+        background: #f3f3f3;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slide-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <!-- header Section -->
@@ -650,15 +714,17 @@
     </section>
 
     <!-- ///// -->
-    <section class="py-24 bg-[#0b0051]">
+    <section class="py-16 lg:py-24 bg-[#0b0051] overflow-hidden">
       <!-- CONTAINER -->
       <div class="max-w-[1370px] mx-auto px-4">
-        <div class="grid grid-cols-2 gap-16 items-center">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+        >
           <!-- LEFT SIDE -->
           <div>
             <!-- Badge -->
             <div
-              class="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-8"
+              class="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6 lg:mb-8"
             >
               <span class="w-2 h-2 bg-white rounded-full"></span>
 
@@ -669,24 +735,24 @@
 
             <!-- Heading -->
             <h2
-              class="text-white text-[50px] font-extrabold leading-[65px] uppercase mb-6"
+              class="text-white text-[32px] sm:text-[40px] lg:text-[50px] font-extrabold leading-tight lg:leading-[65px] uppercase mb-6"
             >
               Show Transparency And Solutions
             </h2>
 
-            <p class="text-gray-300 max-w-[520px] mb-14">
+            <p class="text-gray-300 max-w-full lg:max-w-[520px] mb-10 lg:mb-14">
               Nulla morbi donec nulla tempor scelerisque nisi enim amet. Metus
               sed vitae nec dignissim id morbi egestas.
             </p>
 
             <!-- LIST -->
-            <div class="space-y-6 text-white font-bold text-xl">
-              <!-- ITEM 1 -->
+            <div class="space-y-6 text-white font-bold text-lg lg:text-xl">
+              <!-- ITEM -->
               <div
                 onmouseenter="
                   changeImage('../src/img/solution-thumb1.jpg', this)
                 "
-                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer text-red-500"
+                class="issue group flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
               >
                 <div class="flex gap-4 items-center">
                   <span>•</span>
@@ -695,18 +761,18 @@
                 </div>
 
                 <div
-                  class="w-10 h-10 flex items-center justify-center rounded-full bg-red-600"
+                  class="icon w-10 h-10 flex items-center justify-center rounded-full border border-white text-white group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-300"
                 >
                   →
                 </div>
               </div>
 
-              <!-- ITEM 2 -->
+              <!-- ITEM -->
               <div
                 onmouseenter="
                   changeImage('../src/img/solution-thumb2.jpg', this)
                 "
-                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+                class="issue group flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
               >
                 <div class="flex gap-4">
                   <span>•</span>
@@ -715,18 +781,18 @@
                 </div>
 
                 <div
-                  class="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-red-600 border-white"
+                  class="icon w-10 h-10 flex items-center justify-center rounded-full border border-white text-white group-hover:bg-red-600 group-hover:border-red-600 transition"
                 >
                   →
                 </div>
               </div>
 
-              <!-- ITEM 3 -->
+              <!-- ITEM -->
               <div
                 onmouseenter="
                   changeImage('../src/img/solution-thumb3.jpg', this)
                 "
-                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+                class="issue group flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
               >
                 <div class="flex gap-4">
                   <span>•</span>
@@ -735,18 +801,18 @@
                 </div>
 
                 <div
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-white"
+                  class="icon w-10 h-10 flex items-center justify-center rounded-full border border-white text-white group-hover:bg-red-600 group-hover:border-red-600 transition"
                 >
                   →
                 </div>
               </div>
 
-              <!-- ITEM 4 -->
+              <!-- ITEM -->
               <div
                 onmouseenter="
                   changeImage('../src/img/solution-thumb4.jpg', this)
                 "
-                class="issue flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
+                class="issue group flex justify-between items-center border-b border-white/20 pb-5 cursor-pointer hover:text-red-500"
               >
                 <div class="flex gap-4">
                   <span>•</span>
@@ -755,7 +821,7 @@
                 </div>
 
                 <div
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-white"
+                  class="icon w-10 h-10 flex items-center justify-center rounded-full border border-white text-white group-hover:bg-red-600 group-hover:border-red-600 transition"
                 >
                   →
                 </div>
@@ -764,47 +830,442 @@
           </div>
 
           <!-- RIGHT IMAGE -->
-          <div class="relative flex justify-end">
+          <div
+            class="relative flex justify-center lg:justify-end mt-12 lg:mt-0"
+          >
             <!-- View All -->
             <div
-              class="absolute right-0 w-40 h-40 border border-white/30 rounded-full flex flex-col justify-center items-center text-white"
+              class="absolute top-0 right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-0 w-32 h-32 lg:w-40 lg:h-40 border border-white/30 rounded-full flex flex-col justify-center items-center text-white"
             >
               ↗
 
               <p class="text-sm mt-2">View All Issues</p>
             </div>
+
             <img
               id="issueImage"
               src="img/issue1.jpg"
-              class="w-[560px] h-[330px] object-cover mt-[400px]"
+              class="w-full max-w-[560px] h-[220px] sm:h-[260px] lg:h-[330px] object-cover mt-20 lg:mt-[350px]"
             />
           </div>
         </div>
 
         <!-- COUNTERS -->
-        <div class="grid grid-cols-4 mt-24 text-white">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-10 mt-16 lg:mt-24 text-white"
+        >
           <div>
-            <h3 class="text-[70px] font-extrabold">245+</h3>
+            <h3 class="text-[40px] lg:text-[70px] font-extrabold">245+</h3>
 
             <p class="text-sm text-gray-300">Community Events Hosted</p>
           </div>
 
           <div>
-            <h3 class="text-[70px] font-extrabold">145K</h3>
+            <h3 class="text-[40px] lg:text-[70px] font-extrabold">145K</h3>
 
             <p class="text-sm text-gray-300">Voter Engagements Reached</p>
           </div>
 
           <div>
-            <h3 class="text-[70px] font-extrabold">356+</h3>
+            <h3 class="text-[40px] lg:text-[70px] font-extrabold">356+</h3>
 
             <p class="text-sm text-gray-300">Years In Public Service</p>
           </div>
 
           <div>
-            <h3 class="text-[70px] font-extrabold">3500K</h3>
+            <h3 class="text-[40px] lg:text-[70px] font-extrabold">3500K</h3>
 
             <p class="text-sm text-gray-300">Volunteer Hours Organized</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carosal -->
+    <section class="py-20 overflow-hidden">
+      <div class="px-4 relative py-24">
+        <!-- LEFT BOX -->
+        <div
+          class="w-[350px] absolute z-40 bg-white p-4 ml-[200px] py-16 pb-32 -mt-16 border border-gray-200 max-lg:relative max-lg:ml-0 max-lg:mt-0 max-lg:mb-10 max-lg:w-full"
+        >
+          <div
+            class="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6 lg:mb-8"
+          >
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+
+            Our Priorities
+
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+          </div>
+
+          <h2
+            class="text-xl sm:text-4xl lg:text-5xl font-bold mb-6 lg:mb-8 uppercase"
+          >
+            Projects for People
+          </h2>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="center">
+          <!-- CARD -->
+          <div>
+            <div class="slide-card">
+              <img src="https://picsum.photos/600/400?1" />
+            </div>
+
+            <div class="flex items-center justify-between mt-12 lg:mt-24">
+              <h2
+                class="text-lg lg:text-xl text-black font-extrabold hover:text-red-600 uppercase"
+              >
+                Our Commitment to You
+              </h2>
+
+              <div
+                class="border border-gray-300 rounded-full p-1 hover:bg-red-600 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-black group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div>
+            <div class="slide-card">
+              <img src="https://picsum.photos/600/400?2" />
+            </div>
+
+            <div class="flex items-center justify-between mt-12 lg:mt-24">
+              <h2
+                class="text-lg lg:text-xl text-black font-extrabold hover:text-red-600 uppercase"
+              >
+                Our Commitment to You
+              </h2>
+
+              <div
+                class="border border-gray-300 rounded-full p-1 hover:bg-red-600 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-black group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div>
+            <div class="slide-card">
+              <img src="https://picsum.photos/600/400?3" />
+            </div>
+
+            <div class="flex items-center justify-between mt-12 lg:mt-24">
+              <h2
+                class="text-lg lg:text-xl text-black font-extrabold hover:text-red-600 uppercase"
+              >
+                Our Commitment to You
+              </h2>
+
+              <div
+                class="border border-gray-300 rounded-full p-1 hover:bg-red-600 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-black group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div>
+            <div class="slide-card">
+              <img src="https://picsum.photos/600/400?4" />
+            </div>
+
+            <div class="flex items-center justify-between mt-12 lg:mt-24">
+              <h2
+                class="text-lg lg:text-xl text-black font-extrabold hover:text-red-600 uppercase"
+              >
+                Our Commitment to You
+              </h2>
+
+              <div
+                class="border border-gray-300 rounded-full p-1 hover:bg-red-600 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-black group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Party Member -->
+    <section class="py-20 bg-[#efefef]">
+      <div class="max-w-[1370px] mx-auto px-4">
+        <!-- TOP BUTTON -->
+
+        <div class="text-center">
+          <span
+            class="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-2 rounded-full text-xs font-semibold"
+          >
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+
+            BECOME A VOLUNTEER
+
+            <span class="w-2 h-2 bg-white rounded-full"></span>
+          </span>
+        </div>
+
+        <!-- HEADING -->
+
+        <h2
+          class="text-center font-extrabold uppercase text-4xl md:text-5xl mt-6 leading-tight"
+        >
+          MEET OUR RESPONSIBLE <br />
+
+          PARTY MEMBER
+        </h2>
+
+        <!-- MEMBERS GRID -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          <!-- MEMBER CARD START -->
+
+          <div class="relative group overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=700"
+              class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <!-- HOVER CARD -->
+
+            <div
+              class="absolute inset-0 flex items-end justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+            >
+              <div
+                class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+              >
+                <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                <p class="text-sm text-gray-500">Politician</p>
+
+                <!-- SOCIAL -->
+
+                <div class="flex justify-center gap-3 mt-4">
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    F
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    T
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    IN
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    P
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER 2 -->
+
+          <div class="relative group overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=700"
+              class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div
+              class="absolute inset-0 flex items-end justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+            >
+              <div
+                class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+              >
+                <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                <p class="text-sm text-gray-500">Politician</p>
+
+                <div class="flex justify-center gap-3 mt-4">
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    F
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    T
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    IN
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    P
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER 3 -->
+
+          <div class="relative group overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=700"
+              class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div
+              class="absolute inset-0 flex items-end justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+            >
+              <div
+                class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+              >
+                <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                <p class="text-sm text-gray-500">Politician</p>
+
+                <div class="flex justify-center gap-3 mt-4">
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    F
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    T
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    IN
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    P
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMBER 4 -->
+
+          <div class="relative group overflow-hidden rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=700"
+              class="w-full h-[420px] object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <div
+              class="absolute inset-0 flex items-end justify-center mt-5 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+            >
+              <div
+                class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+              >
+                <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                <p class="text-sm text-gray-500">Politician</p>
+
+                <div class="flex justify-center gap-3 mt-4">
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    F
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    T
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    IN
+                  </div>
+
+                  <div
+                    class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                  >
+                    P
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -825,63 +1286,55 @@
         element.classList.add("text-red-500");
       }
     </script>
-    <!-- Slick JS -->
+    <!-- slick carosal  -->
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- slick js -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
       $(document).ready(function () {
-        $(".slider").slick({
-          dots: true,
+        $(".center").slick({
+          centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 3,
           infinite: true,
-          speed: 500,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          fade: true,
-          cssEase: "linear",
           arrows: true,
-          // prevArrow: '<button type="button" class="slick-prev text-black bg-amber-600">Previous</button>',
-          // nextArrow: '<button type="button" class="slick-next text-black bg-amber-600">Next</button>',
+          dots: false,
+
           responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 1024,
+
               settings: {
+                slidesToShow: 2,
+                centerPadding: "40px",
+              },
+            },
+
+            {
+              breakpoint: 768,
+
+              settings: {
+                slidesToShow: 2,
                 arrows: false,
+                centerPadding: "30px",
+              },
+            },
+
+            {
+              breakpoint: 480,
+
+              settings: {
+                slidesToShow: 1,
+                arrows: true,
+                centerPadding: "20px",
               },
             },
           ],
         });
       });
-    </script>
-
-    <script>
-      const endDate = new Date("2025-07-01T00:00:00").getTime(); // ⏳ Your target date
-
-      const updateCountdown = () => {
-        const now = new Date().getTime();
-        const distance = endDate - now;
-
-        if (distance <= 0) return;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("days").style.setProperty("--value", days);
-        document.getElementById("hours").style.setProperty("--value", hours);
-        document
-          .getElementById("minutes")
-          .style.setProperty("--value", minutes);
-        document
-          .getElementById("seconds")
-          .style.setProperty("--value", seconds);
-      };
-
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
     </script>
   </body>
 </html>
