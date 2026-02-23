@@ -1753,7 +1753,7 @@
     </section>
     <!-- Powerful Support -->
     <section
-      class="py-24 text-white"
+      class="py-14 md:py-20 lg:py-24 text-white"
       style="
         background: linear-gradient(
           135deg,
@@ -1763,46 +1763,82 @@
         );
       "
     >
-      <div class="max-w-[1370px] mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="max-w-[1370px] mx-auto px-4 sm:px-6 lg:px-4">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 lg:gap-16 items-center"
+        >
           <!-- LEFT SIDE -->
-          <div>
+          <div class="text-center lg:text-left">
             <!-- Plus Icon -->
             <div
-              class="w-24 h-24 flex items-center justify-center text-[90px] font-bold opacity-80"
+              class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center text-[60px] md:text-[70px] lg:text-[90px] font-bold opacity-80 mx-auto lg:mx-0"
             >
               +
             </div>
 
-            <p class="mt-10 text-lg leading-relaxed opacity-90 max-w-md">
+            <p
+              class="mt-6 md:mt-8 lg:mt-10 text-base md:text-lg leading-relaxed opacity-90 max-w-md mx-auto lg:mx-0"
+            >
               We have worked with 30+ top companies globally and received
               overwhelmingly positive feedback.
             </p>
 
-            <h2 class="text-5xl font-bold mt-10">5.9K REVIEWS</h2>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-6 md:mt-8 lg:mt-10"
+            >
+              5.9K REVIEWS
+            </h2>
 
             <!-- Star -->
-            <div class="flex gap-2 mt-4 text-yellow-400 text-xl">★ ★ ★ ★ ★</div>
+            <div
+              class="flex justify-center lg:justify-start gap-2 mt-4 text-yellow-400 text-lg md:text-xl"
+            >
+              ★ ★ ★ ★ ★
+            </div>
           </div>
 
           <!-- RIGHT SIDE -->
           <div class="relative">
+            <!-- Badge + Heading -->
+            <div>
+              <div
+                class="inline-flex items-center gap-3 bg-red-600 text-white px-5 md:px-6 py-2 rounded-full text-xs md:text-sm font-semibold mb-6 lg:mb-8"
+              >
+                <span class="w-2 h-2 bg-white rounded-full"></span>
+
+                What people say
+
+                <span class="w-2 h-2 bg-white rounded-full"></span>
+              </div>
+
+              <!-- Heading -->
+              <h2
+                class="text-[26px] sm:text-[36px] lg:text-[50px] font-extrabold leading-tight uppercase mb-6 max-w-full lg:max-w-[600px]"
+              >
+                Trusted Voices, Powerful Support
+              </h2>
+            </div>
+
             <!-- Slider -->
             <div class="testimonial-slider">
-              <!-- Slide 1 -->
+              <!-- Slide -->
               <div>
-                <p class="mt-8 text-lg italic opacity-90 leading-relaxed">
+                <p
+                  class="mt-6 md:mt-8 text-base md:text-lg italic opacity-90 leading-relaxed"
+                >
                   “The level of communication and collaboration we experienced
                   while working with this agency was unparalleled. They were not
                   only responsive but also proactive.”
                 </p>
 
                 <!-- Profile -->
-                <div class="flex justify-between items-center mt-10">
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 mt-8 md:mt-10"
+                >
                   <div class="flex items-center gap-4">
                     <img
                       src="https://i.pravatar.cc/60"
-                      class="w-12 h-12 rounded-full"
+                      class="w-12 h-12 rounded-full object-cover"
                     />
 
                     <div>
@@ -1813,7 +1849,39 @@
                   </div>
 
                   <div class="flex items-center gap-2 text-yellow-400">
-                    <span class="text-white"> 4.9 </span>
+                    <span class="text-white">4.9</span>
+                    ⭐
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div>
+                <p
+                  class="mt-6 md:mt-8 text-base md:text-lg italic opacity-90 leading-relaxed"
+                >
+                  “The level of communication and collaboration we experienced
+                  while working with this agency was unparalleled.”
+                </p>
+
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6 mt-8 md:mt-10"
+                >
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="../src/img/event-img.png"
+                      class="w-12 h-12 rounded-full object-cover"
+                    />
+
+                    <div>
+                      <h4 class="font-bold">CLODDY FISHER</h4>
+
+                      <p class="text-sm opacity-80">Political Member</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-2 text-yellow-400">
+                    <span class="text-white">4.9</span>
                     ⭐
                   </div>
                 </div>
@@ -1821,12 +1889,16 @@
             </div>
 
             <!-- Arrows -->
-            <div class="absolute right-0 -top-14 flex gap-3">
-              <button class="prev border border-white w-10 h-10 rounded-full">
+            <div class="absolute right-0 top-0 md:top-6 lg:top-10 flex gap-3">
+              <button
+                class="prev flex items-center justify-center border border-white w-9 h-9 md:w-10 md:h-10 rounded-full"
+              >
                 ←
               </button>
 
-              <button class="next border border-white w-10 h-10 rounded-full">
+              <button
+                class="next flex items-center justify-center border border-white w-9 h-9 md:w-10 md:h-10 rounded-full"
+              >
                 →
               </button>
             </div>
