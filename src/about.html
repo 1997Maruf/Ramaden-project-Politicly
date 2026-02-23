@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header Section -->
+    <div class="nav-section bg-[#fff]">
+      <div class="container lg:w-[1370px] w-[300px] mx-auto px-4">
+        <nav class="flex items-center justify-between py-6 relative">
+          <!-- Logo -->
+          <img src="./img/logo.png" alt="Logo" class="w-[120px]" />
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label for="menu-toggle" class="lg:hidden cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-[#171100]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+          <!-- Desktop Menu -->
+          <div
+            class="hidden lg:flex items-center gap-[77px] text-[#5F5B53] text-[16px] font-normal"
+          >
+            <ul class="flex gap-[47px]">
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#events"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#ourTeam"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#blogm"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <button
+              class="bg-red-600 hover:bg-red-700 transition px-8 py-4 font-semibold text-white"
+            >
+              Donate Now
+            </button>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            class="peer-checked:flex hidden absolute top-[100%] left-0 w-[200px] flex-col bg-[#fffcf4] px-4 py-6 text-[#5F5B53] text-[16px] font-normal lg:hidden z-50"
+          >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#about"
+              >Courses</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#services"
+              >Pricing</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#contact"
+              >Reviews</a
+            >
+            <button
+              class="w-full h-[49px] rounded-full bg-black text-white font-semibold"
+            >
+              Sign Up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
