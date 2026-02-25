@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header Section -->
+    <div class="nav-section bg-[#fff]">
+      <div class="container lg:w-[1370px] w-[300px] mx-auto px-4">
+        <nav class="flex items-center justify-between py-6 relative">
+          <!-- Logo -->
+          <img src="./img/logo.png" alt="Logo" class="w-[120px]" />
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label for="menu-toggle" class="lg:hidden cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-[#171100]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+          <!-- Desktop Menu -->
+          <div
+            class="hidden lg:flex items-center gap-[77px] text-[#5F5B53] text-[16px] font-normal"
+          >
+            <ul class="flex gap-[47px]">
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#events"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#ourTeam"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#blogm"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <button
+              class="bg-red-600 hover:bg-red-700 transition px-8 py-4 font-semibold text-white"
+            >
+              Donate Now
+            </button>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            class="peer-checked:flex hidden absolute top-[100%] left-0 w-[200px] flex-col bg-[#fffcf4] px-4 py-6 text-[#5F5B53] text-[16px] font-normal lg:hidden z-50"
+          >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#about"
+              >Courses</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#services"
+              >Pricing</a
+            >
+            <a
+              class="hover:text-[#171100] hover:border-b-2 hover:border-[#171100]"
+              href="#contact"
+              >Reviews</a
+            >
+            <button
+              class="w-full h-[49px] rounded-full bg-black text-white font-semibold"
+            >
+              Sign Up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- about hero section -->
+    <section
+      class="relative w-full min-h-[350px] lg:min-h-[420px] flex items-center justify-center text-white overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-center bg-cover"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&quot;);
+        "
+      ></div>
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Container -->
+      <div class="relative z-10 max-w-[1370px] mx-auto px-4 w-full text-center">
+        <!-- Title -->
+        <h1
+          class="uppercase font-extrabold tracking-wide text-[36px] sm:text-[48px] lg:text-[70px]"
+        >
+          Events Details
+        </h1>
+
+        <!-- Breadcrumb -->
+        <div
+          class="flex justify-center items-center gap-3 mt-5 text-sm sm:text-base"
+        >
+          <a href="#" class="text-gray-200 hover:text-white transition">
+            Home
+          </a>
+
+          <span class="text-red-600"> › </span>
+
+          <span class="text-red-600 font-semibold"> Events Details </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f2f2f2] py-14">
+      <!-- Container -->
+      <div class="max-w-[1370px] mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- ================= LEFT CONTENT ================= -->
+          <div class="lg:col-span-2 space-y-8">
+            <!-- Image -->
+            <img
+              src="../src/img/blog-details-thumb1.jpg"
+              class="rounded-lg w-full object-cover"
+            />
+
+            <!-- Meta -->
+            <div class="flex items-center gap-5 text-sm text-gray-500">
+              <span>👤 Admin</span>
+
+              <span>📅 July 13, 2025</span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="uppercase font-extrabold text-[38px] leading-tight">
+              DONALD RUMSFELD: ANTI-NATION-BUILDER
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="text-gray-600 leading-relaxed">
+              Appropriately mesh standards compliant communities vis-a-vis
+              client-centric channels. Seamles reinvent open-source data via
+              bricks-and-clicks bandwidth. Globally leverage other's inexpensi
+              technologies vis-a-vis user friendly systems. Assertively pursue
+              high-payoff outsourcing throu aps sustainable web-readiness.
+              Authoritatively benchmark optimal
+            </p>
+
+            <p class="text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing Curabitur
+              vulputate vestibulum Phasell jesmit dolor eget viverra pretium,
+              dolor tellus aliquet nunc, vitae ultricies erat elit eu lacus.
+              Vestibulu lima consectetur, cursus ante, tincidunt sapien. Nulla
+              quis diam sit amet turpis interdum accumsan enim. Vivamus faucibus
+              ex sed nibh egestas elementum.
+            </p>
+
+            <!-- RED QUOTE BOX -->
+            <div
+              class="bg-red-600 text-white p-8 relative border-l-10 border-black rounded-[10px]"
+            >
+              <p class="leading-relaxed">
+                Competently architect intermandated deliverables client with
+                niches build cross-media continually growth strategies without
+                robust.
+              </p>
+
+              <h4 class="font-bold mt-6">— CEO & Founder</h4>
+
+              <span class="absolute right-8 bottom-6 text-6xl opacity-40">
+                <img src="../src/img/quote.svg" alt="" />
+              </span>
+            </div>
+
+            <p class="text-gray-600 leading-relaxed">
+              Appropriately mesh standards compliant communities vis-a-vis
+              client-centric channels. Seamles reinvent open-source data via
+              bricks-and-clicks bandwidth. Globally leverage other's inexpensi
+              technologies vis-a-vis user friendly systems. Assertively pursue
+              high-payoff outsourcing throu aps sustainable web-readiness.
+              Authoritatively benchmark optimal
+            </p>
+
+            <!-- SUB TITLE -->
+            <h3 class="uppercase font-extrabold text-3xl">
+              Ultimate Business Strategy Solution
+            </h3>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+              <!-- List -->
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  How Will Activities Traditional Manufact.
+                </li>
+
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  AI These Digital and Projects Aim to Both.
+                </li>
+
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Secure Your Network From Hackers.
+                </li>
+
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Keep Your Company Safe From Phishing.
+                </li>
+
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Shield Your Devices From Malware.
+                </li>
+
+                <li class="flex gap-2 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Enhance Your Software to Prevent.
+                </li>
+              </ul>
+
+              <!-- Image -->
+              <img
+                src="../src/img/blog-details-thumb2.jpg"
+                class="rounded-lg"
+              />
+            </div>
+            <!-- Party Member -->
+            <section class="pb-20 bg-[#efefef]">
+              <div class="">
+                <!-- HEADING -->
+
+                <h2
+                  class="font-extrabold uppercase text-4xl md:text-5xl mt-6 leading-tight"
+                >
+                  Our Speakers
+                </h2>
+
+                <!-- MEMBERS GRID -->
+
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16"
+                >
+                  <!-- MEMBER 2 -->
+
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      src="../src/img/dd1.jpg"
+                      class="w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+
+                    <div
+                      class="absolute inset-0 flex items-end justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+                    >
+                      <div
+                        class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+                      >
+                        <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                        <p class="text-sm text-gray-500">Politician</p>
+
+                        <div class="flex justify-center gap-3 mt-4">
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            F
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            T
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            IN
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            P
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- MEMBER 3 -->
+
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      src="../src/img/dd2.jpg"
+                      class="w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+
+                    <div
+                      class="absolute inset-0 flex items-end justify-center opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+                    >
+                      <div
+                        class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+                      >
+                        <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                        <p class="text-sm text-gray-500">Politician</p>
+
+                        <div class="flex justify-center gap-3 mt-4">
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            F
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            T
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            IN
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            P
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- MEMBER 4 -->
+
+                  <div class="relative group overflow-hidden rounded-lg">
+                    <img
+                      src="../src/img/dd3.jpg"
+                      class="w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+
+                    <div
+                      class="absolute inset-0 flex items-end justify-center mt-5 opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+                    >
+                      <div
+                        class="bg-white w-[85%] rounded-xl shadow-2xl text-center p-6"
+                      >
+                        <h3 class="font-bold uppercase">SARAH JOHNSON</h3>
+
+                        <p class="text-sm text-gray-500">Politician</p>
+
+                        <div class="flex justify-center gap-3 mt-4">
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            F
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            T
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            IN
+                          </div>
+
+                          <div
+                            class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                          >
+                            P
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ================= SIDEBAR ================= -->
+          <div class="space-y-8">
+            <!-- DATE CARD -->
+            <div class="bg-white p-7 rounded-lg shadow">
+              <h4 class="font-extrabold mb-4 uppercase">
+                Start Date / End Date
+              </h4>
+
+              <p class="text-sm text-gray-600">
+                Start : Tuesday, 12:00pm – 3:00pm
+              </p>
+
+              <p class="text-sm text-gray-600 mb-5">
+                End : Thursday, 9:00am – 11:00am
+              </p>
+
+              <span
+                class="bg-red-600 text-white px-5 py-2 text-sm inline-block"
+              >
+                Ongoing
+              </span>
+              <h3 class="text-3xl font-extrabold mt-4 uppercase">
+                Project Author
+              </h3>
+              <div class="flex gap-2 mt-4">
+                <img src="../src/img/event-img.png" alt="" />
+                <div>
+                  <h3 class="text-xl text-black font-bold">David Thompson</h3>
+
+                  <p class="text-sm text-gray-500">Youth Engagement Lead</p>
+                </div>
+              </div>
+              <h3 class="text-3xl font-extrabold mt-4 uppercase">
+                Project Author
+              </h3>
+              <div class="flex gap-3 mt-4">
+                <div
+                  class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                >
+                  F
+                </div>
+
+                <div
+                  class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                >
+                  T
+                </div>
+
+                <div
+                  class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                >
+                  IN
+                </div>
+
+                <div
+                  class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-red-600 hover:text-white duration-300"
+                >
+                  P
+                </div>
+              </div>
+            </div>
+            <!-- LOCATION -->
+            <div class="bg-white p-7 rounded-lg shadow">
+              <h3 class="text-3xl font-extrabold mt-4 uppercase">
+                Event Location
+              </h3>
+
+              <p class="text-sm text-gray-600 mb-5 flex gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+
+                365-335 Hunter St, Newcastle NSW 2300, Australia
+              </p>
+
+              <img
+                src="https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png"
+                class="rounded"
+              />
+            </div>
+
+            <!-- RECENT POST -->
+            <div class="bg-white p-7 rounded-lg shadow">
+              <h3 class="text-3xl font-extrabold mt-4 uppercase">
+                Recent Post
+              </h3>
+
+              <!-- Post -->
+              <div class="flex gap-4 mb-5 mt-4">
+                <img src="https://picsum.photos/80" class="rounded" />
+
+                <div>
+                  <p class="text-xs text-gray-400">July 27, 2025</p>
+
+                  <h6 class="font-bold text-[16px] uppercase">
+                    Show your passion and give us the trust
+                  </h6>
+                </div>
+              </div>
+
+              <div class="flex gap-4 mb-5">
+                <img src="https://picsum.photos/81" class="rounded" />
+
+                <div>
+                  <p class="text-xs text-gray-400">July 27, 2025</p>
+
+                  <h6 class="font-bold text-[16px] uppercase">
+                    Donald Rumsfeld : Anti Nation Builder
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section
+      class="text-white py-16 lg:py-24"
+      style="
+        background: linear-gradient(
+          90deg,
+          #141414 0%,
+          #1a1a1a 50%,
+          #101010 100%
+        );
+      "
+    >
+      <!-- Container -->
+      <div class="max-w-[1370px] mx-auto px-4">
+        <!-- Top Area -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 gap-10"
+        >
+          <!-- Heading -->
+          <h2
+            class="uppercase font-extrabold leading-[1] text-[50px] sm:text-[70px] lg:text-[95px]"
+          >
+            LET’S WORK <br />
+            TOGETHER
+          </h2>
+
+          <!-- Right Email -->
+          <div class="text-right space-y-4">
+            <img src="../src/img/footer-mail.png" class="w-16 ml-auto" />
+
+            <p class="uppercase text-gray-300 tracking-wide">
+              info@politicly.com.uk
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16"
+        >
+          <!-- Newsletter -->
+          <div>
+            <h4 class="uppercase text-2xl font-bold mb-6 tracking-wide">
+              Newsletter
+            </h4>
+
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Sign up to searing weekly newsletter to get the latest updates.
+            </p>
+
+            <!-- Email Input -->
+            <div class="relative mb-5">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="bg-transparent border-b border-gray-400 w-full pb-3 outline-none placeholder-gray-400"
+              />
+
+              <span class="absolute right-0 bottom-3 text-gray-400"> ✈ </span>
+            </div>
+
+            <!-- Checkbox -->
+            <label class="flex items-center gap-2 text-sm text-gray-300 mb-8">
+              <input type="checkbox" />
+
+              I agree to the Privacy Policy.
+            </label>
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+              <img src="../src/img/logo.png" class="w-12" />
+
+              <span class="font-bold text-lg"> POLITICLY </span>
+            </div>
+          </div>
+
+          <!-- Quick Link -->
+          <div>
+            <h4 class="uppercase text-2xl font-bold mb-6">Quick Link</h4>
+
+            <ul class="space-y-4 text-gray-300">
+              <li>Home</li>
+              <li>About us</li>
+              <li>Candidate</li>
+              <li>Events</li>
+              <li>Donate</li>
+            </ul>
+          </div>
+
+          <!-- Pages -->
+          <div>
+            <h4 class="uppercase text-2xl font-bold mb-6">Pages</h4>
+
+            <ul class="space-y-4 text-gray-300">
+              <li>Our Program</li>
+              <li>Our Team</li>
+              <li>Shop</li>
+              <li>Image Credits</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="uppercase text-2xl font-bold mb-6">
+              Contact Information
+            </h4>
+
+            <ul class="space-y-4 text-gray-300 mb-8">
+              <li>hello@wowtheme7.com</li>
+
+              <li>+1 (234) 567 8494</li>
+
+              <li>789 Denver Avenue Riverside, USA</li>
+            </ul>
+
+            <h5 class="uppercase text-xl font-bold mb-5">Connect With Us</h5>
+
+            <!-- Social -->
+            <div class="flex gap-4">
+              <a
+                class="w-11 h-11 flex items-center justify-center border border-gray-500 rounded-full hover:bg-red-600 transition"
+              >
+                f
+              </a>
+
+              <a
+                class="w-11 h-11 flex items-center justify-center border border-gray-500 rounded-full hover:bg-red-600 transition"
+              >
+                t
+              </a>
+
+              <a
+                class="w-11 h-11 flex items-center justify-center border border-gray-500 rounded-full hover:bg-red-600 transition"
+              >
+                ig
+              </a>
+
+              <a
+                class="w-11 h-11 flex items-center justify-center border border-gray-500 rounded-full hover:bg-red-600 transition"
+              >
+                p
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

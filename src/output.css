@@ -42,12 +42,6 @@
 .-ml-\[150px\] {
   margin-left: calc(150px * -1);
 }
-.-ml-\[170px\] {
-  margin-left: calc(170px * -1);
-}
-.-ml-\[200px\] {
-  margin-left: calc(200px * -1);
-}
 .-ml-\[280px\] {
   margin-left: calc(280px * -1);
 }
@@ -96,6 +90,9 @@
 .max-h-\[420px\] {
   max-height: 420px;
 }
+.min-h-\[350px\] {
+  min-height: 350px;
+}
 .min-h-\[420px\] {
   min-height: 420px;
 }
@@ -107,9 +104,6 @@
 }
 .w-\[100\%\] {
   width: 100%;
-}
-.w-\[100px\] {
-  width: 100px;
 }
 .w-\[120px\] {
   width: 120px;
@@ -129,29 +123,8 @@
 .w-\[400px\] {
   width: 400px;
 }
-.w-\[500px\] {
-  width: 500px;
-}
-.w-\[700px\] {
-  width: 700px;
-}
-.w-\[800px\] {
-  width: 800px;
-}
-.w-\[900px\] {
-  width: 900px;
-}
 .w-\[950px\] {
   width: 950px;
-}
-.w-\[1200px\] {
-  width: 1200px;
-}
-.w-\[1300px\] {
-  width: 1300px;
-}
-.w-\[1400px\] {
-  width: 1400px;
 }
 .w-full {
   width: 100%;
@@ -258,6 +231,22 @@
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
 }
+.border-b-4 {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 4px;
+}
+.border-l-4 {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 4px;
+}
+.border-l-8 {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 8px;
+}
+.border-l-10 {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 10px;
+}
 .bg-\[\#0B0051\] {
   background-color: #0B0051;
 }
@@ -278,6 +267,9 @@
 }
 .bg-\[\#efefef\] {
   background-color: #efefef;
+}
+.bg-\[\#f2f2f2\] {
+  background-color: #f2f2f2;
 }
 .bg-\[\#f3f3f1\] {
   background-color: #f3f3f1;
@@ -334,20 +326,32 @@
 .text-\[26px\] {
   font-size: 26px;
 }
+.text-\[30px\] {
+  font-size: 30px;
+}
 .text-\[32px\] {
   font-size: 32px;
+}
+.text-\[36px\] {
+  font-size: 36px;
+}
+.text-\[38px\] {
+  font-size: 38px;
 }
 .text-\[40px\] {
   font-size: 40px;
 }
+.text-\[42px\] {
+  font-size: 42px;
+}
 .text-\[50px\] {
   font-size: 50px;
 }
+.text-\[56px\] {
+  font-size: 56px;
+}
 .text-\[60px\] {
   font-size: 60px;
-}
-.text-\[90px\] {
-  font-size: 90px;
 }
 .leading-\[1\.1\] {
   --tw-leading: 1.1;
@@ -377,6 +381,9 @@
 }
 .opacity-0 {
   opacity: 0%;
+}
+.opacity-40 {
+  opacity: 40%;
 }
 .opacity-80 {
   opacity: 80%;
